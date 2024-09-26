@@ -21,3 +21,10 @@ backToTopBtn.addEventListener("click", function() {
         behavior: "smooth"
     });
 });
+
+const menuToggle = document.querySelector('.menu-toggle');
+    const siteNav = document.querySelector('.site-nav');
+
+    menuToggle.addEventListener('click', () => {
+        siteNav.classList.toggle('active'); // Toggle the 'active' class to show/hide the menu
+    });

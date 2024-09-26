@@ -531,7 +531,7 @@ footer nav a {
 
 /* Smartphone responsive start form here */
 @media (max-width: 480px) {
-
+    
     /* header section start here */
     .menu-toggle {
         display: block;
@@ -541,10 +541,12 @@ footer nav a {
         border: none;
         cursor: pointer;
     }
-
+    header #logo h2{
+        font-size: 22px;
+    }
     /* Default styles for the hamburger icon */
     .menu-icon {
-        font-size: 30px;
+        font-size: 25px;
         color: white;
         display: inline-block;
     }
@@ -566,9 +568,12 @@ footer nav a {
         top: 0px;
         left: 0;
         z-index: 999;
-        padding-top: 60px;
+        padding: 60px 0px;
+        height: 85vh;
+        justify-content: center;
+        align-items: center;
     }
-
+   
     /* Show navigation menu when active */
     .site-nav.active {
         display: flex;
@@ -580,7 +585,12 @@ footer nav a {
     }
 
     .menu-toggle.active .close-icon {
-        display: inline-block;
+        display: block;
+        position: absolute;
+        top: 26px;
+        left: 247px;
+        z-index: 1000;
+        font-size: 35px;
     }
 
     /* Navigation items as before */
@@ -591,7 +601,7 @@ footer nav a {
     }
 
     .site-nav ul li {
-        width: 100%;
+        width: 50%;
         text-align: center;
         padding: 10px 0;
     }
@@ -599,10 +609,21 @@ footer nav a {
     .site-nav ul li a {
         padding: 10px 0;
         width: 100%;
-        font-size: 18px;
+        font-size: 20px;
         display: block;
     }
+
+
     /* header section end here */
+
+
+
+
+
+
+
+
+
 
 
     /* hero section start here*/
@@ -949,4 +970,4 @@ footer nav a {
     }
 
     /* Copywrite section end here */
-}
+}}

@@ -23,8 +23,9 @@ backToTopBtn.addEventListener("click", function() {
 });
 
 const menuToggle = document.querySelector('.menu-toggle');
-    const siteNav = document.querySelector('.site-nav');
+        const siteNav = document.querySelector('.site-nav');
 
-    menuToggle.addEventListener('click', () => {
-        siteNav.classList.toggle('active'); // Toggle the 'active' class to show/hide the menu
-    });
+        menuToggle.addEventListener('click', function() {
+            menuToggle.classList.toggle('active');
+            siteNav.classList.toggle('active');
+        });
